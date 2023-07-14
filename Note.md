@@ -41,12 +41,12 @@
 	* `.push()`: Thêm phần tử vào cuối mảng
 	* `.unshift()`: Thêm phần tử vào đầu mảng và trả về độ dài của mảng
 	* `.splice()`: Xóa phần tử theo index và có thể chèn phần tử
-		* VD: `myArray.splice(1,2) -> xóa 2 phần từ từ index 1`
-		* VD: `myArray.splice(1,2, 'value') -> xóa 2 phần từ từ index 1 và chèn value vào`
+		* VD: `myArray.splice(1,2)` -> xóa 2 phần tử từ index 1
+		* VD: `myArray.splice(1,2, 'value')` -> xóa 2 phần từ từ index 1 và chèn value vào
 	* `.concat()`: Nối 2 mảng
 	* `.slice()`: Cắt phần tử của mảng và trả về phần tử đó
-		* VD: `array.slice(1,2) -> Cắt từ phần tử 1 đến 2`
-		* VD: `array.slice(0) -> Copy mảng`
+		* VD: `array.slice(1,2)` -> Cắt từ phần tử 1 đến 2
+		* VD: `array.slice(0)` -> Copy mảng
 	* `.forEach()`: Duyệt qua từng phần tử của mảng, trả về phần tử và index
 		* VD: `myArray.forEach(function(val){...});`
 	* `.every()`: Kiểm tra tất cả phần tử trong mảng thỏa mãn 1 điều kiện, kiểu trả về boolean
