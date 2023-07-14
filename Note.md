@@ -41,29 +41,27 @@
 	* `.push()`: Thêm phần tử vào cuối mảng
 	* `.unshift()`: Thêm phần tử vào đầu mảng và trả về độ dài của mảng
 	* `.splice()`: Xóa phần tử theo index và có thể chèn phần tử
-		`myArray.splice(1,2) -> xóa 2 phần từ từ index 1`
-		`myArray.splice(1,2, 'value') -> xóa 2 phần từ từ index 1 và chèn value vào`
+		* VD: `myArray.splice(1,2) -> xóa 2 phần từ từ index 1`
+		* VD: `myArray.splice(1,2, 'value') -> xóa 2 phần từ từ index 1 và chèn value vào`
 	* `.concat()`: Nối 2 mảng
 	* `.slice()`: Cắt phần tử của mảng và trả về phần tử đó
-		`array.slice(1,2) -> Cắt từ phần tử 1 đến 2`
-		`array.slice(0) -> Copy mảng`
+		* VD:`array.slice(1,2) -> Cắt từ phần tử 1 đến 2`
+		* VD:`array.slice(0) -> Copy mảng`
 	* `.forEach()`: Duyệt qua từng phần tử của mảng, trả về phần tử và index
-		`myArray.forEach(function(val){...});`
+		* VD:`myArray.forEach(function(val){...});`
 	* `.every()`: Kiểm tra tất cả phần tử trong mảng thỏa mãn 1 điều kiện, kiểu trả về boolean
-		`myArray.every(function(val){return ...});`
+		* VD:`myArray.every(function(val){return ...});`
 	* `.some()`: Kiểm tra 1 phần tử trong mảng có thỏa mãn 1 điều kiện không
 	* `.find()`: Tìm kiếm trong array có phần tử truyền vào không
 	* `.filter()`: Giống find nhưng trả về tất cả phần tử thỏa mãn
 	* `.map()`: Trả về một mảng mới với số lượng phần tử bằng mảng cũ, giá trị phần tử được quyết định bởi lệnh return
-	    `newArray = myArray.map(myFunction);`
+	    * VD:`newArray = myArray.map(myFunction);`
 	* `.reduce()`: Nhận về 1 giá trị duy nhất sau khi tính toán trên array
     * Cách tự định nghĩa phương thức của Array:
-        `array.prototype.tenPhuongThuc = function(){...}`
+        * VD:`array.prototype.tenPhuongThuc = function(){...}`
 8. Function
-    * Declaration function:
-		`var myFunction = function(){...}`
-	* Expression function:
-		`myFunction = function(){...}`
+    * Declaration function: `var myFunction = function(){...}`
+	* Expression function: `myFunction = function(){...}`
 9. Loop
     * `for in`: Lặp qua key
     * `for of`: Lặp qua value
@@ -79,15 +77,21 @@
 	* `Math.max()`: Giá trị lớn nhất
 11. Object
     * `delete`: Xóa một key trong object
-        VD: `delete myObj.key1`
+        * VD: `delete myObj.key1`
     * `constructor`: Hàm khởi tạo
 12. Một số phương thức khác
     * `${variable}`: Cách đưa biến vào trong một chuỗi (Template String)
     * `.hasOwnProperty(variable)`: Kiểm tra tham số truyền vào có phải phần tử con không
     * Cách loại bỏ phần tử lặp trong tham số truyền vào: `[...(new Set(array))]`
     * `.includes()`: Tìm kiếm chuỗi truyền vào trong 1 chuỗi/mảng, có thể truyền thêm tham số index
-        VD: myString = '......';
+        * VD: 
+            ```php
+            var myString = '......';
 	        myString.includes('something');
+            ```
 
-	    VD: myArray = ['...', '...', '...'];
+	    * VD: 
+            ```php
+            var myArray = ['...', '...', '...'];
 	        myArray.includes('something');
+            ```
