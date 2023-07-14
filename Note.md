@@ -45,20 +45,20 @@
 		* VD: `myArray.splice(1,2, 'value') -> xóa 2 phần từ từ index 1 và chèn value vào`
 	* `.concat()`: Nối 2 mảng
 	* `.slice()`: Cắt phần tử của mảng và trả về phần tử đó
-		* VD:`array.slice(1,2) -> Cắt từ phần tử 1 đến 2`
-		* VD:`array.slice(0) -> Copy mảng`
+		* VD: `array.slice(1,2) -> Cắt từ phần tử 1 đến 2`
+		* VD: `array.slice(0) -> Copy mảng`
 	* `.forEach()`: Duyệt qua từng phần tử của mảng, trả về phần tử và index
-		* VD:`myArray.forEach(function(val){...});`
+		* VD: `myArray.forEach(function(val){...});`
 	* `.every()`: Kiểm tra tất cả phần tử trong mảng thỏa mãn 1 điều kiện, kiểu trả về boolean
-		* VD:`myArray.every(function(val){return ...});`
+		* VD: `myArray.every(function(val){return ...});`
 	* `.some()`: Kiểm tra 1 phần tử trong mảng có thỏa mãn 1 điều kiện không
 	* `.find()`: Tìm kiếm trong array có phần tử truyền vào không
 	* `.filter()`: Giống find nhưng trả về tất cả phần tử thỏa mãn
 	* `.map()`: Trả về một mảng mới với số lượng phần tử bằng mảng cũ, giá trị phần tử được quyết định bởi lệnh return
-	    * VD:`newArray = myArray.map(myFunction);`
+	    * VD: `newArray = myArray.map(myFunction);`
 	* `.reduce()`: Nhận về 1 giá trị duy nhất sau khi tính toán trên array
     * Cách tự định nghĩa phương thức của Array:
-        * VD:`array.prototype.tenPhuongThuc = function(){...}`
+        * VD: `array.prototype.tenPhuongThuc = function(){...}`
 8. Function
     * Declaration function: `var myFunction = function(){...}`
 	* Expression function: `myFunction = function(){...}`
@@ -82,7 +82,7 @@
 12. Một số phương thức khác
     * `${variable}`: Cách đưa biến vào trong một chuỗi (Template String)
     * `.hasOwnProperty(variable)`: Kiểm tra tham số truyền vào có phải phần tử con không
-    * Cách loại bỏ phần tử lặp trong tham số truyền vào: `[...(new Set(array))]`
+    * `[...(new Set(array))]`: Cách loại bỏ phần tử lặp trong tham số truyền vào
     * `.includes()`: Tìm kiếm chuỗi truyền vào trong 1 chuỗi/mảng, có thể truyền thêm tham số index
         * VD: 
             ```php
