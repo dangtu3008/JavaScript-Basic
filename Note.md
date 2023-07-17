@@ -75,10 +75,12 @@
 	* `Math.random()`: Giá trị ngẫu nhiên
 	* `Math.min()`: Giá trị nhỏ nhất
 	* `Math.max()`: Giá trị lớn nhất
+
 11. Object
     * `delete`: Xóa một key trong object
         * VD: `delete myObj.key1`
     * `constructor`: Hàm khởi tạo
+
 12. Một số phương thức khác
     * `${variable}`: Cách đưa biến vào trong một chuỗi (Template String)
     * `.hasOwnProperty(variable)`: Kiểm tra tham số truyền vào có phải phần tử con không
@@ -95,3 +97,29 @@
             var myArray = ['...', '...', '...'];
 	        myArray.includes('something');
             ```
+
+13. Promise
+	* `Promise` là một đối tượng được sử dụng để thực hiện các tác vụ bất đồng bộ và xử lý kết quả của chúng
+	* Một Promise có thể ở trong một trong ba trạng thái sau:
+		* Đang chờ (`Pending`): Trạng thái mặc định của một `Promise` khi được tạo ra. Nó đang chờ để hoàn thành hoặc bị từ chối.
+		* Hoàn thành (`Fulfilled`): `Promise` chuyển sang trạng thái này khi tác vụ bất đồng bộ hoàn thành thành công. Nó sẽ trả về kết quả mong đợi.
+		* Từ chối (`Rejected`): `Promise` chuyển sang trạng thái này khi xảy ra lỗi trong quá trình thực hiện tác vụ bất đồng bộ. Nó sẽ trả về lỗi hoặc thông báo từ chối.
+	* Cấu trúc cơ bản của một `Promise` như sau:
+	```php
+	const myPromise = new Promise((resolve, reject) => {
+  		// Xử lý tác vụ bất đồng bộ
+  		// Nếu thành công, sử dụng resolve(value) để trả về kết quả
+  		// Nếu xảy ra lỗi, sử dụng reject(error) để từ chối và trả về lỗi
+	});
+
+	myPromise
+  		.then((result) => {
+    		// Xử lý khi Promise được hoàn thành
+  		})
+  		.catch((error) => {
+    		// Xử lý khi Promise bị từ chối
+  		})
+  		.finally(() => {
+    		// Xử lý sau khi Promise được hoàn thành hoặc từ chối
+  		});``
+	```
